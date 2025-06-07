@@ -199,7 +199,6 @@ export default function Portfolio() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section ref={homeRef} className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -237,26 +236,11 @@ export default function Portfolio() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-full bg-slate-800 flex items-center justify-center overflow-hidden border-8 border-slate-700 shadow-2xl">
-                <div className="w-full h-full bg-gradient-to-br from-blue-900/30 to-slate-800 flex items-center justify-center">
-                  <div className="relative w-3/4 h-3/4">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div
-                        className="w-full h-full rounded-full border-4 border-blue-400/30 border-dashed animate-spin"
-                        style={{ animationDuration: "15s" }}
-                      ></div>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div
-                        className="w-3/4 h-3/4 rounded-full border-4 border-blue-500/40 border-dashed animate-spin"
-                        style={{ animationDuration: "10s", animationDirection: "reverse" }}
-                      ></div>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-1/2 h-1/2 rounded-full bg-blue-500/20 animate-pulse"></div>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-blue-400 font-bold text-lg">AA</span>
-                    </div>
+                <div className="w-full h-full bg-gradient-to-br from-blue-900/10 to-slate-800 flex items-center justify-center">
+                  <div className="w-3/4 h-3/4 rounded-full bg-slate-600 flex items-center justify-center">
+                    <svg className="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
                   </div>
                 </div>
               </div>
