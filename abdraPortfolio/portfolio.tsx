@@ -199,58 +199,56 @@ export default function Portfolio() {
         </div>
       </header>
 
-      <section ref={homeRef} className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                Exploring the frontiers of <span className="text-blue-400">quantum computing</span>
-              </h1>
-              <p className="text-xl text-slate-300">
-                Physics student and developer specializing in quantum algorithms and their practical applications
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                  <Download className="w-4 h-4 mr-2" />
-                  Download CV
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white"
-                  onClick={() => scrollToSection("research")}
-                >
-                  My Research
-                </Button>
-              </div>
-              <div className="flex space-x-4 pt-4">
-                <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
-                  <Github className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
-                  <Linkedin className="w-6 h-6" />
-                </a>
-                <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
-                  <Mail className="w-6 h-6" />
-                </a>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-square rounded-full bg-slate-800 flex items-center justify-center overflow-hidden border-8 border-slate-700 shadow-2xl">
-                <div className="w-full h-full bg-gradient-to-br from-blue-900/10 to-slate-800 flex items-center justify-center">
-                  <div className="w-3/4 h-3/4 rounded-full bg-slate-600 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-slate-800 p-3 rounded-full shadow-lg border border-slate-700">
-                <Badge className="bg-blue-600 hover:bg-blue-700 px-3 py-1 text-sm text-white">Quantum Physicist</Badge>
-              </div>
-            </div>
+      {/* Hero Section - No Photo, Simple Background */}
+  <section ref={homeRef} className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900">
+    <div className="max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="space-y-6">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            Exploring the frontiers of <span className="text-blue-400">quantum computing</span>
+          </h1>
+          <p className="text-xl text-slate-300">
+            Physics student and developer specializing in quantum algorithms and their practical applications
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Download className="w-4 h-4 mr-2" />
+              Download CV
+            </Button>
+            <Button
+              variant="outline"
+              className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white"
+              onClick={() => scrollToSection("research")}
+            >
+              My Research
+            </Button>
+          </div>
+          <div className="flex space-x-4 pt-4">
+            <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
+              <Github className="w-6 h-6" />
+            </a>
+            <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors">
+              <Mail className="w-6 h-6" />
+            </a>
           </div>
         </div>
-      </section>
+        <div className="relative">
+          <div className="w-full h-96 rounded-lg bg-gradient-to-br from-blue-900/20 to-slate-800 border-4 border-slate-700 shadow-2xl flex items-center justify-center">
+            <div className="text-center">
+              <span className="text-blue-400 font-bold text-2xl">AA</span>
+              <p className="text-slate-300 text-lg mt-2">Quantum Computing Enthusiast</p>
+            </div>
+          </div>
+          <div className="absolute -bottom-4 -right-4 bg-slate-800 p-3 rounded-full shadow-lg border border-slate-700">
+            <Badge className="bg-blue-600 hover:bg-blue-700 px-3 py-1 text-sm text-white">Quantum Physicist</Badge>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
       {/* About Section */}
       <section ref={aboutRef} id="about" className="py-20 px-4 sm:px-6 lg:px-8">
